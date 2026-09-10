@@ -14,7 +14,7 @@ dataset.
    elbow method and silhouette analysis, K=3)
 3. **Supervised prediction**: rolling 20-match pre-match averages per player,
    turned into symmetrised win/loss matchup differentials, with a strict
-   *temporal* train/test split (no random shuffling — the model is only
+   *temporal* train/test split (no random shuffling, the model is only
    ever evaluated on matches that happened after its training window)
 4. **Model comparison**: logistic regression, elastic net, and random
    forest, evaluated on accuracy, AUC-ROC, F1, Kappa, and Brier score
@@ -61,7 +61,7 @@ K=3), interpretable roughly as: consistent/low-error players, error-prone
 players, and high-risk/high-reward players who hit more winners but also
 make more mistakes. Separation runs along an attacking-play/error-rate
 axis (PC1) and a serve-risk axis (PC2), though the clusters show some
-overlap — PC1+PC2 explain only ~50% of total variance. See
+overlap, PC1+PC2 explain only ~50% of total variance. See
 `output/figures/` for cluster plots and player footprint plots (Federer,
 Nadal, Cilic career trajectories in PCA space).
 
