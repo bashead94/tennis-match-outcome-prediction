@@ -1,0 +1,35 @@
+"column","missing_vals","pct_missing"
+"match_id",0,0
+"Player 1",0,0
+"Player 2",0,0
+"Pl 1 hand",116,0.2
+"Pl 2 hand",116,0.2
+"Date",8,0.01
+"Tournament",0,0
+"Round",0,0
+"Time",24694,43.43
+"Court",13452,23.66
+"Surface",0,0
+"Umpire",21572,37.94
+"Best of",124,0.22
+"Final TB?",186,0.33
+"Charted by",16,0.03
+"player",0,0
+"set",0,0
+"serve_pts",0,0
+"aces",0,0
+"dfs",0,0
+"first_in",0,0
+"first_won",0,0
+"second_in",0,0
+"second_won",0,0
+"bk_pts",0,0
+"bp_saved",0,0
+"return_pts",0,0
+"return_pts_won",0,0
+"winners",0,0
+"winners_fh",0,0
+"winners_bh",0,0
+"unforced",0,0
+"unforced_fh",0,0
+"unforced_bh",0,0

@@ -1,0 +1,4 @@
+"Model","CV_ROC","Test_AUC"
+"Logistic",0.7824,0.7753
+"Elastic Net",0.783,0.774
+"Random Forest",0.7649,0.7581

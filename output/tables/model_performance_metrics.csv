@@ -1,0 +1,8 @@
+"Metric","Value"
+"Accuracy",0.6978
+"Precision",0.6978
+"Recall",0.6978
+"F1",0.6978
+"Kappa",0.3955
+"AUC-ROC",0.7753
+"Brier Score",0.193
