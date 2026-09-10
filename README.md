@@ -1,7 +1,7 @@
 # Predicting Tennis Match Outcomes from Pre-Match Playing Style
 
 A machine learning pipeline that predicts ATP match winners using only
-**pre-match** statistics — no data from the match itself leaks into the
+**pre-match** statistics  no data from the match itself leaks into the
 prediction. Built on the [Jeff Sackmann Tennis Match Charting Project](https://github.com/JeffSackmann/tennis_MatchChartingProject)
 dataset.
 
@@ -27,8 +27,8 @@ dataset.
 - **Temporal split, not random**: train/test is split at a cutoff date
   (75th percentile), because a random split would let the model "see the
   future" relative to some training examples.
-- **Symmetrised matchups**: each match appears twice — once as
-  (winner − loser) labelled Win, once as (loser − winner) labelled Loss —
+- **Symmetrised matchups**: each match appears twice, once as
+  (winner − loser) labelled Win, once as (loser − winner) labelled Loss,
   so the model can't learn a trivial ordering shortcut.
 - **Preprocessing fit on training data only**: centering/scaling
   parameters are learned from the training set and applied to the test
@@ -43,13 +43,13 @@ dataset.
 | Random Forest | 0.685 | 0.758 | 0.683 | 0.370 | 0.200 |
 
 Logistic regression edges out the other two, but the gap between all three
-is small enough that model choice shouldn't rest on accuracy alone — it's
+is small enough that model choice shouldn't rest on accuracy alone, it's
 also the most interpretable of the three, since coefficients read directly
 as log-odds. 5-fold CV ROC (0.782) tracked closely with test-set AUC
 (0.775), indicating the model generalises rather than overfits.
 
 **The single strongest predictor by a wide margin is the rolling win-rate
-differential** (`d_win_rate`) — recent form dominates over any individual
+differential** (`d_win_rate`) recent form dominates over any individual
 serve/return statistic. This is consistent with the ~70% accuracy ceiling
 reported elsewhere in tennis outcome prediction (Kovalchik, 2016); the
 model is a useful decision-support baseline rather than a high-confidence
@@ -71,7 +71,7 @@ Nadal, Cilic career trajectories in PCA space).
 - In-match statistics contribute little once recent win-rate is accounted for — the model can't capture live match dynamics (correctly excluded here to avoid leakage)
 - Can't quantify player fitness, injury status, or psychological factors
 - Grand Slam matches (best-of-5) are mixed in with regular tour matches (best-of-3), which may distort raw-count-based features
-- ~70% accuracy is consistent with the literature's ceiling for pre-match-only prediction — this is a decision-support baseline, not a high-confidence forecaster
+- ~70% accuracy is consistent with the literature's ceiling for pre-match-only prediction, this is a decision-support baseline, not a high-confidence forecaster
 
 ## Repository structure
 
