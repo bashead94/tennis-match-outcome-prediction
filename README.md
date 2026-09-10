@@ -77,10 +77,10 @@ Nadal, Cilic career trajectories in PCA space).
 
 ```
 ├── R/
-│   ├── 01_eda.R                 # Exploratory analysis (was A2)
-│   ├── 02_clustering.R          # PCA + K-means profiling (was A3)
-│   ├── 03_predictive_model.R    # Rolling features + logistic regression (was A4)
-│   └── 04_model_comparison.R    # Logistic vs elastic net vs random forest (was A5)
+│   ├── 01_eda.R                 # Exploratory analysis 
+│   ├── 02_clustering.R          # PCA + K-means profiling
+│   ├── 03_predictive_model.R    # Rolling features + logistic regression 
+│   └── 04_model_comparison.R    # Logistic vs elastic net vs random forest
 ├── output/
 │   ├── figures/                 # All generated plots
 │   └── tables/                  # Metrics, coefficients, cluster summaries
