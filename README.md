@@ -103,7 +103,7 @@ the scripts.
 # Restore exact package versions
 renv::restore()
 
-# Run in order — each script is self-contained and re-derives
+# Run in order, each script is self-contained and re-derives
 # the cleaned dataset from the raw CSVs
 source("R/01_eda.R")
 source("R/02_clustering.R")
